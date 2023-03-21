@@ -1,9 +1,14 @@
-# First repository creation
+# HW02
 
-# Cloning
+<ul>
+<li> За допомогою prompt запитати ім'я користувача.
+</li>
+<li>За допомогою alert вивести "Hello, John! How are you?" , де John це те, що ввів користувач</li>
+</ul>
+# HW03
 
-# Setting url
-
-# Modifying repository
-
-# Add commit and push
+<ul>
+<li> Отримати від користувача 3 рядки та вивести їх у довільному порядку однією командою (конкатенація)
+</li>
+<li>Розбити за цифрами п'ятизначне число і вивести у вихідному порядку через пробіл.</li>
+</ul>
