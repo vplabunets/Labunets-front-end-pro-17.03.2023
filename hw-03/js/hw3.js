@@ -16,7 +16,7 @@ console.log("finalString2", finalString2);
 
 //Task #2
 
-const inputNumber = 12345;
-const modifiedNumber = inputNumber.toString().split("").join(" ");
+const inputNumber = 222555333000;
+const modifiedNumber = inputNumber.toString().split("").sort().join(" ");
 
 console.log("modifiedNumber", modifiedNumber);
