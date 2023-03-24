@@ -5,6 +5,7 @@
 </li>
 <li>За допомогою alert вивести "Hello, John! How are you?" , де John це те, що ввів користувач</li>
 </ul>
+
 # HW03
 
 <ul>
