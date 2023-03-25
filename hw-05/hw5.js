@@ -1,7 +1,5 @@
 //Task #1
-let operationType = prompt(
-  "Please, enter operation type (add, sub, mult, div)"
-);
+let operationType = prompt("Please, enter hours quantity");
 if (
   operationType !== "add" &&
   operationType !== "sub" &&
