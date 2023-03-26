@@ -94,19 +94,4 @@
 
 Якщо в якомусь випадку він не захоче вводити інформацію і натисне Скасувати, показати йому повідомлення – “Шкода, що Ви не захотіли ввести свій(ю) …” і вказуємо, що він не захотів вводити – дату народження, місто чи вид спорту .
 
-# HW08писати код нижче з використанням конструкції switch…case
-
-### Переписати код нижче з використанням конструкції switch…case
-
-let numOrStr = prompt('input number or string');
-console.log(numOrStr)
-
-if(numOrStr === null) {
-console.log('ви скасували')
-} else if( numOrStr.trim() === '' ) {
-console.log('Empty String');
-} else if ( isNaN( +numOrStr ) ) {
-console.log(' number is Ba_NaN')
-} else {
-console.log('OK!')
-}
+ 
