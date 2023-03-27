@@ -64,7 +64,6 @@ if (!favoriteSport) {
 
 if (favoriteSport) {
   favoriteSport = favoriteSport.toLowerCase();
-  alert("It's a pity you didn't want to enter your favorite sport.");
   for (let i = 0; i < champions.length; i += 1) {
     if (champions[i].sport === favoriteSport) {
       alert(`Wow! You want to be like ${champions[i].player}.`);
