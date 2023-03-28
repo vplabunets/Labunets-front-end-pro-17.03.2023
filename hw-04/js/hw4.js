@@ -41,9 +41,11 @@ if (!inputOperand1 || !inputOperand2) {
       operationType === "-" ||
       operationType === "+"
     ) {
-      alert(
-        `${inputOperand1Numbered} ${operationType} ${inputOperand2Numbered} = ${result}`
-      );
+      if (result !== Infinity) {
+        alert(
+          `${inputOperand1Numbered} ${operationType} ${inputOperand2Numbered} = ${result}`
+        );
+      }
     } else alert("Operation type is invalid, please, reload the page");
   }
 }
