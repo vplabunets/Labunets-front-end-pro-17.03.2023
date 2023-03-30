@@ -17,9 +17,8 @@ if (!inputOperand1 || !inputOperand2) {
   if (isNaN(inputOperand1Numbered) || isNaN(inputOperand2Numbered)) {
     alert("Both operands should be numbers, please, reload the page");
   } else {
-    let operationType = prompt(
-      "Please, enter operation type (only / * - +)"
-    ).trim();
+    let operationType = prompt("Please, enter operation type (only / * - +)");
+    operationType = operationType ? operationType.trim() : null;
     if (operationType === "/") {
       if (inputOperand2Numbered === 0) {
         alert("Division by 0 is not allowed");
