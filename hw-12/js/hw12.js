@@ -3,7 +3,7 @@
 // Видалити елементи з масиву з 2 по 4 (включно!).
 // У міру змін виводити вміст масиву на сторінку.
 
-// This array was
+// This array was added by user
 const userArray = [
   "Odesa",
   "Kyiv",
