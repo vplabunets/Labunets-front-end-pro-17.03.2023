@@ -3,16 +3,9 @@
 //1) for
 console.log("FOR");
 
-let integerNumber = 27;
-let firstNumber = 1;
-let lastNumber = integerNumber;
+let integerNumber = 729;
 let result = null;
-
-for (
-  let i = firstNumber + 1;
-  i <= Math.ceil(Math.pow(integerNumber, 1 / i));
-  i += 1
-) {
+for (let i = 2; 3 ** i <= integerNumber; i += 1) {
   result = Math.pow(integerNumber, 1 / i);
   if (result !== 3) {
     result = null;
@@ -27,17 +20,17 @@ if (!result) {
     `Number ${integerNumber} can not be obtained by raising 3 to the any power `
   );
 }
+
 // 2) while
 console.log("WHILE");
 
-integerNumber = 27;
-firstNumber = 1;
-lastNumber = integerNumber;
+integerNumber = 2187;
 result = null;
 let number = 1;
 
-while (number <= Math.ceil(Math.pow(integerNumber, 1 / number))) {
+while (3 ** number <= integerNumber) {
   result = Math.pow(integerNumber, 1 / number);
+
   if (result !== 3) {
     result = null;
     number += 1;
@@ -49,6 +42,7 @@ while (number <= Math.ceil(Math.pow(integerNumber, 1 / number))) {
     break;
   }
 }
+
 if (!result) {
   console.log(
     `Number ${integerNumber} can not be obtained by raising 3 to the any power `
@@ -58,9 +52,7 @@ if (!result) {
 //  3) do while
 console.log("DO WHILE");
 
-integerNumber = 27;
-firstNumber = 1;
-lastNumber = integerNumber;
+integerNumber = 6561;
 result = null;
 number = 1;
 
@@ -69,14 +61,13 @@ do {
   if (result !== 3) {
     result = null;
     number += 1;
-    continue;
   } else {
     console.log(
       `Number ${integerNumber} can be obtained by raising 3 to the power of ${number} `
     );
     break;
   }
-} while (number <= Math.ceil(Math.pow(integerNumber, 1 / number)));
+} while (3 ** number <= integerNumber);
 if (!result) {
   console.log(
     `Number ${integerNumber} can not be obtained by raising 3 to the any power `
