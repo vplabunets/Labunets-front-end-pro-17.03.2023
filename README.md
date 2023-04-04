@@ -240,7 +240,7 @@ console.log('OK!')
       <li>І знайти суму всіх балансів користувачів</li>
 </ul>
 
-# HW14
+# HW15
 
 <ul>
       <li>
@@ -253,5 +253,20 @@ console.log('OK!')
         <p>removeElement(array, 5 );</p>
         <p>console.log(array);</p>
         <p>// Результат: [1, 2, 3, 4, 6, 7]</p>
+      </li>
+    </ul>
+
+# HW16
+
+    <ul>
+      <li>
+        Реалізуйте функцію generateKey(length, characters), яка повертає рядок
+        випадкових символів із набору characters довжиною length. span>
+      </li>
+      <li>
+        <p>Наприклад:</p>
+        <p>const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';</p>
+        <p>const key = generateKey(16, characters);</p>
+        <p>console.log(key); // eg599gb60q926j8i</p>
       </li>
     </ul>
