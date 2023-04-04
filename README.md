@@ -239,3 +239,19 @@ console.log('OK!')
       </li>
       <li>І знайти суму всіх балансів користувачів</li>
 </ul>
+
+# HW14
+
+<ul>
+      <li>
+        Реалізуйте функцію removeElement(array, item), щоб видалити елемент item
+        з масиву array.
+      </li>
+      <li>
+        <p>Наприклад:</p>
+        <p>const array = [1, 2, 3, 4, 5, 6, 7];</p>
+        <p>removeElement(array, 5 );</p>
+        <p>console.log(array);</p>
+        <p>// Результат: [1, 2, 3, 4, 6, 7]</p>
+      </li>
+    </ul>
