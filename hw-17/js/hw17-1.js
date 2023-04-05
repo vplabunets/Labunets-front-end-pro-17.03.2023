@@ -16,4 +16,6 @@ function calculateArithmeticMean(array) {
 }
 
 const arithmeticMean = calculateArithmeticMean(inputArray);
-console.log(arithmeticMean);
+console.log(
+  `Arithmetic mean of numbers from array [${inputArray}] equals ${arithmeticMean}`
+);
