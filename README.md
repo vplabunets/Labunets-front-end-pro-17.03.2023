@@ -255,8 +255,24 @@ console.log('OK!')
 <p>// Результат: [1, 2, 3, 4, 6, 7]</p>
 </li>
 </ul>
-
+ 
+ 
 # HW16
+
+<ul>
+  <li>
+    Реалізуйте функцію generateKey(length, characters), яка повертає рядок
+    випадкових символів із набору characters довжиною length. span>
+  </li>
+  <li>
+    <p>Наприклад:</p>
+    <p>const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';</p>
+    <p>const key = generateKey(16, characters);</p>
+    <p>console.log(key); // eg599gb60q926j8i</p>
+  </li>
+</ul>
+
+# HW17
 
 <ul>
 <li>
@@ -272,5 +288,3 @@ console.log('OK!')
   Створити функцію, яка прибирає з рядка всі символи, які ми передали другим аргументом. 'func(" hello world", ['l', 'd'])' поверне нам "heo wor". Вихідний рядок та символи для видалення задає користувач.
 </li>
 </ul>
-
-# HW16
