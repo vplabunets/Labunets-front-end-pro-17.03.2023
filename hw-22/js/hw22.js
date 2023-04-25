@@ -1,3 +1,4 @@
+const MIN_OWNER_AGE = 18;
 // 1. Створити сутність "Людина".
 
 //    Властивості:
@@ -15,7 +16,7 @@ class Human {
     this.age = age;
   }
 
-  getHumanInfo() {
+  getInfo() {
     console.log(this);
     console.log(this.name, this.age);
   }
@@ -53,24 +54,25 @@ class Car {
     this.productionYear = productionYear;
     this.plate = plate;
   }
-  setCarOwner(carOwner) {
-    if (carOwner.age >= 18) {
+  setOwner(carOwner) {
+    if (carOwner.age >= MIN_OWNER_AGE) {
       this.carOwner = carOwner;
       return this;
     }
     console.log("Owner should be older than 18 years");
+    return this;
   }
-  getCarInfo() {
+  getInfo() {
     console.log(this);
-    this.carOwner.getHumanInfo;
+    this.carOwner.getInfo;
   }
 }
 
 const monicaCar = new Car("Alfa Romeo", "Giulia Veloce", 2023, "MILANO777");
 const wandaCar = new Car("Lamborgini", "Diablo", 2000, "BOLOGNA666");
 
-monicaCar.setCarOwner(monicaBelucci);
-wandaCar.setCarOwner(wandaNara);
+monicaCar.setOwner(monicaBelucci);
+wandaCar.setOwner(wandaNara);
 
-monicaCar.getCarInfo();
-wandaCar.getCarInfo();
+monicaCar.getInfo();
+wandaCar.getInfo();
