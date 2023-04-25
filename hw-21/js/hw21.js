@@ -74,7 +74,7 @@ class House {
     this.maxFlatsQuantity = maxFlatsQuantity;
   }
   addFlat(flat) {
-    if (this.flats.length <= this.maxFlatsQuantity) {
+    if (this.flats.length < this.maxFlatsQuantity) {
       this.flats.push(flat);
       return this;
     }
@@ -83,5 +83,10 @@ class House {
 }
 
 const house = new House(3);
-house.addFlat(flatBeckham).addFlat(flatBelucciCassel).addFlat(flatNaraIccardi);
+house
+  .addFlat(flatBeckham)
+  .addFlat(flatBelucciCassel)
+  .addFlat(flatNaraIccardi)
+  .addFlat(flatNaraIccardi);
+
 console.log("house", house);
