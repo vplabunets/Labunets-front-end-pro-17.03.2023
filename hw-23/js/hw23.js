@@ -14,16 +14,16 @@
 // посипати приправою (+15 тугриків, 0 калорій) - полити майонезом (+ 20 тугриків, +5 калорій).
 
 class Hamburger {
-  static Sizes = {
+  static SIZES = {
     SMALL: { price: 50, energy: 20 },
     BIG: { price: 100, energy: 40 },
   };
-  static Fillings = {
+  static FILLINGS = {
     CHEESE: { price: 10, energy: 20 },
     SALAD: { price: 20, energy: 5 },
     POTATOES: { price: 15, energy: 10 },
   };
-  static Additives = {
+  static ADDITIVES = {
     SPICES: { price: 15, energy: 0 },
     MAYONNAISE: { price: 20, energy: 5 },
     MUSTARD: { price: 15, energy: 20 },
@@ -31,7 +31,7 @@ class Hamburger {
 
   size = "";
   filling = "";
-  additives = [];
+  ADDITIVES = [];
   totalPrice = 0;
   totalEnergy = 0;
 
@@ -42,12 +42,12 @@ class Hamburger {
 
   calculatePrice() {
     this.totalPrice =
-      Hamburger.Sizes[this.size].price +
-      (Hamburger.Fillings[this.filling].price ?? 0) +
-      (this.additives.length === 0
+      Hamburger.SIZES[this.size].price +
+      (Hamburger.FILLINGS[this.filling].price ?? 0) +
+      (this.ADDITIVES.length === 0
         ? 0
-        : this.additives.reduce((sum, element) => {
-            sum += Hamburger.Additives[element].price;
+        : this.ADDITIVES.reduce((sum, element) => {
+            sum += Hamburger.ADDITIVES[element].price;
             return sum;
           }, 0));
     return this;
@@ -55,23 +55,23 @@ class Hamburger {
 
   calculateEnergy() {
     this.totalEnergy =
-      Hamburger.Sizes[this.size].energy +
-      (Hamburger.Fillings[this.filling].energy ?? 0) +
-      (this.additives.length === 0
+      Hamburger.SIZES[this.size].energy +
+      (Hamburger.FILLINGS[this.filling].energy ?? 0) +
+      (this.ADDITIVES.length === 0
         ? 0
-        : this.additives.reduce((sum, element) => {
-            sum += Hamburger.Additives[element].energy;
+        : this.ADDITIVES.reduce((sum, element) => {
+            sum += Hamburger.ADDITIVES[element].energy;
             return sum;
           }, 0));
     return this;
   }
 
   addAdditive(additive) {
-    this.additives.push(additive);
+    this.ADDITIVES.push(additive);
     return this;
   }
   removeAdditive(additive) {
-    this.additives.splice(this.additives.indexOf(additive), 1);
+    this.ADDITIVES.splice(this.ADDITIVES.indexOf(additive), 1);
     return this;
   }
 }
@@ -86,16 +86,16 @@ smallHamburger
   .calculatePrice()
   .calculateEnergy();
 console.log(
-  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.additives}`,
+  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.ADDITIVES}`,
   smallHamburger
 );
 smallHamburger.addAdditive("MUSTARD").calculatePrice().calculateEnergy();
 console.log(
-  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.additives}`,
+  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.ADDITIVES}`,
   smallHamburger
 );
 smallHamburger.removeAdditive("MAYONNAISE").calculatePrice().calculateEnergy();
 console.log(
-  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.additives}`,
+  `SMALL CHEESE HAMBURGER WITH ${smallHamburger.ADDITIVES}`,
   smallHamburger
 );
