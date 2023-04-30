@@ -1,13 +1,4 @@
-td {
-  border: 1px solid black;
-  width: 30px;
-  text-align: center;
-  background: yellow;
-}
-td:nth-child(2n + 1) {
-  background: blue;
-}
-
+ 
 .wrapper {
   display: flex;
   justify-content: center;
