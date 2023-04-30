@@ -1,12 +1,12 @@
-const focusedEl = document.querySelector(".focused");
 const focusingEl = document.querySelector(".focusing");
+const appearingEl = document.querySelector(".appearing");
 
-focusedEl.addEventListener("focus", addElement);
-focusedEl.addEventListener("blur", removeElement);
+focusingEl.addEventListener("focus", addElement);
+focusingEl.addEventListener("blur", removeElement);
 
 function addElement() {
-  focusingEl.classList.remove("hidden");
+  appearingEl.classList.remove("hidden");
 }
 function removeElement() {
-  focusingEl.classList.add("hidden");
+  appearingEl.classList.add("hidden");
 }
