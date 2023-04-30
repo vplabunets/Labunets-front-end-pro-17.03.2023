@@ -11,7 +11,7 @@ const dataBase = {
 };
 
 const wrapperEl = document.querySelector(".wrapper");
-const dataBaseLength = Object.keys(pictureDataBase).length;
+const dataBaseLength = Object.keys(dataBase).length;
 const randomiser = Math.round(Math.random() * (dataBaseLength - 1) + 1);
 
-wrapperEl.innerHTML = `<img src="${pictureDataBase[randomiser]}" alt="cat picture" width="400" height="300">`;
+wrapperEl.innerHTML = `<img src="${dataBase[randomiser]}" alt="cat picture" width="400" height="300">`;
