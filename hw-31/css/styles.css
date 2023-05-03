@@ -1,0 +1,84 @@
+ul {
+  padding: 0;
+}
+.section {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-name {
+  text-align: center;
+  display: block;
+}
+.registration-form {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 480px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.registration-form label {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 16px; */
+}
+
+.registration-form button {
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+.select {
+  height: 36px;
+}
+.radio-container {
+  display: flex;
+}
+.input-radio {
+  margin-bottom: 0;
+}
+
+input,
+textarea {
+  padding: 8px;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+}
+.users-list {
+  list-style: none;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-info-list {
+  margin-bottom: 20px;
+}
+
+.user-info-item {
+  display: flex;
+
+  width: 500px;
+}
+
+.user-info-item-key {
+  display: flex;
+  border: 1px solid;
+  width: 50%;
+  padding-left: 10px;
+}
+.user-info-item-value {
+  border: 1px solid;
+  width: 50%;
+  padding-left: 10px;
+}
