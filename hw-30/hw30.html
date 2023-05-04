@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work 30</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="section">
+      <h1 class="section-title">HW 30. Online shop</h1>
+      <ul class="cards-list"></ul>
+      <div class="">
+        <form
+          class="confirm-form visually-hidden"
+          id="confirm-form"
+          autocomplete="off"
+        >
+          <label>
+            Full Name
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              autofocus
+              required
+            />
+          </label>
+          <label>
+            City
+            <select class="select" name="cities" id="city-select" required>
+              <option value="">--Please choose city--</option>
+              <option value="odesa">Odesa</option>
+              <option value="kyiv">Kyiv</option>
+              <option value="lviv">Lviv</option>
+              <option value="dnipro">Dnipro</option>
+              <option value="kharkiv">Kharkiv</option>
+            </select>
+            <label>
+              Nova Poshta Office
+              <input type="number" name="npOffice" id="Office" required />
+            </label>
+
+            <div class="radio-container">
+              <input
+                class="input-radio"
+                type="radio"
+                id="postpayment"
+                name="payment-type"
+                value="postpayment"
+                checked
+              />
+              <label class="input-radio" for="payment-type">Postpayment</label>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                id="prepayment"
+                name="payment-type"
+                value="prepayment"
+              />
+              <label class="input-radio" for="prepaymen">Prepayment</label>
+            </div>
+          </label>
+          <label>
+            Quantity
+            <input
+              class="quantity-input"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+            />
+          </label>
+          <label>
+            Comments
+            <textarea
+              name="comments"
+              id="comments"
+              rows="2"
+              required
+            ></textarea>
+          </label>
+          <button class="button" type="submit" id="submit-button">
+            Confirm order
+          </button>
+        </form>
+
+        <div class="message"></div>
+      </div>
+    </div>
+    <script src="js/hw30.js" type="module"></script>
+  </body>
+</html>
