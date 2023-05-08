@@ -4,7 +4,6 @@ export function createCardsListMarkup(cards) {
       (card) => `
     <div class="card">
   <h3 class="card-title">${card.title.toUpperCase()}</h3>
- 
     <img class="card-image"
       src=${card.link}
       alt=${card.alt}
