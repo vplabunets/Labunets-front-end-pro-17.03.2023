@@ -1,15 +1,12 @@
-import { categories } from "./categories.js";
-
 export function createCategoriesMarkup(data) {
   const categoriesMarkup = ` <label>
              Categories
             <select class="select" name="categories" id="city-select" required>
             <option value="">--Product type--</option>
             ${data
-              .map((element) => {
-                return `<option value="${element}">${element}</option>
-            `;
-              })
+              .map(
+                (element) => `<option value="${element}">${element}</option>`
+              )
               .join("")} 
             </select><label>`;
   return categoriesMarkup;

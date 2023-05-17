@@ -3,6 +3,7 @@ ul {
   list-style: none;
 }
 .button {
+  cursor: pointer;
   display: block;
   width: 150px;
   height: 40px;
