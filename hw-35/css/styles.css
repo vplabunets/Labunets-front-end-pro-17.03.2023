@@ -1,0 +1,135 @@
+.button {
+  font-family: Cantarell;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #354c76;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #354c76;
+  font-weight: bold;
+  cursor: pointer;
+}
+.section {
+  align-self: center;
+  color: #fff;
+  font-family: Cantarell;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+  min-height: 100vh;
+  padding: 30px;
+  background: rgb(232, 209, 183);
+  background: linear-gradient(
+    0deg,
+    rgba(232, 209, 183, 1) 0%,
+    rgba(140, 148, 151, 1) 50%,
+    rgba(55, 91, 127, 1) 100%
+  );
+}
+.header {
+  display: flex;
+}
+.section-title {
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.form {
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  /* flex-direction: column; */
+  width: 400px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #e2ceb4;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 50px;
+  margin-right: 12px;
+  padding: 8px;
+  font: inherit;
+}
+.card {
+  margin-top: 25px;
+}
+.weather-card-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 400px;
+  height: 550px;
+  border-radius: 35px;
+  background: rgb(57, 66, 105);
+  background: linear-gradient(
+    to bottom left,
+    rgba(57, 66, 105, 1) 0%,
+    rgba(109, 144, 184, 1) 30%,
+    rgba(245, 147, 65, 56) 100%
+  );
+}
+.card-title {
+  font-size: 30px;
+}
+.city {
+  font-size: 30px;
+  color: #a0abbf;
+  align-self: end;
+}
+.icon-wrap {
+  display: flex;
+  min-height: 100px;
+}
+.descriptions-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day-wrap {
+  /* margin-left: 20px; */
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.month-date-wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.date {
+  margin-left: 10px;
+}
+.temperature-wrapper {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.temperature-name {
+  font-size: 20px;
+  letter-spacing: -2px;
+}
+.temperature-value {
+  font-size: 50px;
+  font-weight: bold;
+}
