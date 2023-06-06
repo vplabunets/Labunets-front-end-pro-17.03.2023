@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed5ad04e-c6ec-452d-89aa-7e2a6eaf51cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/event_list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-49/js/scriptData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging hw-23",
     "last_opened_file_path": "C:/projects/hillel/hw-33",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1686073009790</updated>
       <workItem from="1686073012605" duration="2945000" />
-      <workItem from="1686079223815" duration="4873000" />
+      <workItem from="1686079223815" duration="5227000" />
     </task>
     <servers />
   </component>
