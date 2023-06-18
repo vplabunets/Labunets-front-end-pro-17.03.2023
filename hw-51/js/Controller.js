@@ -42,7 +42,7 @@ const Controller = {
 
   prerenderTodos() {
     const data = Model.getData();
-    if (!data.length) return;
+     if (!data.length) return;
     View.renderElement(data);
   },
 

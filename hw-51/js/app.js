@@ -2,6 +2,7 @@
 
 (function () {
   function createTodoItemMarkup({ title, description, id }) {
+    console.log(title)
     return `<div class="col-3 bg-info p-2 rc rounded-1"> 
               <p>${title}</p>
               <p>${description}<span></span></p>

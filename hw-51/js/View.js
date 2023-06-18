@@ -4,9 +4,17 @@ const View = {
 
   renderElement(todoItemsData) {
     if (todoItemsData) {
-      this.todoItemsBlock.innerHTML = todoItemsData
-        .map((todoItemsData) => this.createTodoItemMarkup(todoItemsData))
-        .join("");
+      const arr = todoItemsData[Symbol.iterator]()
+      let  done =false;
+      let markup =''
+      while(!done){
+        const element = arr.next()
+         done = element.done
+        if (!done){
+          markup+= this.createTodoItemMarkup(element.value)
+        }
+      }
+      this.todoItemsBlock.innerHTML = markup
     }
     return "";
   },
@@ -21,4 +29,6 @@ const View = {
     if (typeof createTodoItemMarkup !== "function") return;
     this.createTodoItemMarkup = createTodoItemMarkup;
   },
-};
+
+
+
