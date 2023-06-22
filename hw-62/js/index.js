@@ -2,22 +2,27 @@ function Student(firstName, lastName, birthYear) {
   this.firstName = firstName;
   this.lastName = lastName;
   this.birthYear = birthYear;
-  this.presence = [];
-  this.marks = [];
+  this.presence = new Array(10);
+  this.marks = new Array(10);
+  this.currentLesson = 0;
+  this.currentMark = 0;
 
   Student.prototype.present = function () {
-    if (this.presence.length < 10) {
-      this.presence = [...this.presence, true];
+    if (this.currentLesson < 10) {
+      this.presence[this.currentLesson] = true;
+      this.currentLesson += 1;
     }
   };
   Student.prototype.absent = function () {
-    if (this.presence.length < 10) {
-      this.presence = [...this.presence, false];
+    if (this.currentLesson < 10) {
+      this.presence[this.currentLesson] = false;
+      this.currentLesson += 1;
     } else console.log("presence array is full");
   };
   Student.prototype.mark = function (mark) {
-    if (this.marks.length < 10) {
-      this.marks = [...this.marks, mark];
+    if (this.currentMark < 10) {
+      this.marks[this.currentMark] = mark;
+      this.currentMark += 1;
     } else console.log("Marks array is full");
   };
 
