@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed5ad04e-c6ec-452d-89aa-7e2a6eaf51cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/event_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-49/js/scriptData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-66/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw-66/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging hw-23",
-    "last_opened_file_path": "C:/projects/hillel/hw-33",
+    "last_opened_file_path": "C:/projects/hillel/Labunets-front-end-pro-17.03.2023/hw-66",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +52,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\hillel\Labunets-front-end-pro-17.03.2023\hw-66" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,6 +67,7 @@
       <updated>1686073009790</updated>
       <workItem from="1686073012605" duration="2945000" />
       <workItem from="1686079223815" duration="5227000" />
+      <workItem from="1688070422185" duration="1588000" />
     </task>
     <servers />
   </component>
