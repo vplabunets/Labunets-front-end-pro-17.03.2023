@@ -1,11 +1,11 @@
 const string = "abracadabra";
 
 (function (){
-      function findUniqueElement(string){
+      function findUniqueElementsQuantity(string){
         const elementsArray = new Set(string.split("") )
         return elementsArray.size
       }
 
-      console.log(`String contains ${findUniqueElement(string)} unique elements`);
+      console.log(`String contains ${findUniqueElementsQuantity(string)} unique elements`);
 })()
 
