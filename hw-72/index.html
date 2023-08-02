@@ -18,7 +18,23 @@
 <main>
     <section class="contacts">
         <div class="container">
-            <div class="contacts__content">
+            <div class="contacts__content" >
+                <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Call menu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+<!--                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                                <button type="button" id="end-call" data-end-call class="btn btn-danger" disabled>Finish call</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="input-group mb-3">
                     <label for="contacts-search" class="input-group-text" id="basic-addon1">Search</label>
                     <input id="contacts-search" type="text" class="form-control" placeholder="Contact">

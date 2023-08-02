@@ -43,7 +43,7 @@ class Call {
 
         const oldState = this.state
         this.#state = value
-
+        // console.log(this.#state)
         if (value === Call.#callStates.reject || value === Call.#callStates.disconnect) {
             this.#stopCalcDuration()
             this.#endDate = new Date()
