@@ -1,0 +1,38 @@
+Index: hw-73/js/AlbumsController.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class AlbumsController {\r\n    #albumsLink = \"https://jsonplaceholder.typicode.com/albums\"\r\n    albumsWrapperEl = document.querySelector(\".albums__content\")\r\n\r\n    constructor() {\r\n        this.fillAlbums()\r\n        this.setEvents()\r\n    }\r\n\r\n    async fetchAlbums() {\r\n        try {\r\n            const response = await fetch(this.#albumsLink)\r\n            const albums = await response.json()\r\n            return albums\r\n        } catch (error) {\r\n            console.error(error)\r\n        }\r\n\r\n    }\r\n\r\n    async fillAlbums() {\r\n        await this.fetchAlbums().then(albums => this.albumsWrapperEl.innerHTML = this.albumsMarkupCreate(albums, album.albumMarkupCreate)).catch(error => console.error(error))\r\n\r\n    }\r\n\r\n    albumsMarkupCreate(albums, albumMarkup) {\r\n        return `<div class=\"list-group\">${albums.map(element => albumMarkup(element)).join(\"\")}</div>`\r\n    }\r\n\r\n    async clickHandler(event) {\r\n        if (event.target.nodeName === \"A\") {\r\n            await picturesController.fillPictures(event.target.dataset.id)\r\n            // this.albumsWrapperEl.removeEventListener(\"click\", this.clickHandler)\r\n        }\r\n    }\r\n\r\n    setEvents() {\r\n        this.albumsWrapperEl.addEventListener(\"click\", this.clickHandler)\r\n    }\r\n\r\n    removeEvents() {\r\n        this.albumsWrapperEl.removeEventListener(\"click\", this.clickHandler)\r\n    }\r\n}\r\n\r\nconst albumsController = new AlbumsController()\r\n
+===================================================================
+diff --git a/hw-73/js/AlbumsController.js b/hw-73/js/AlbumsController.js
+--- a/hw-73/js/AlbumsController.js	
++++ b/hw-73/js/AlbumsController.js	
+@@ -3,8 +3,9 @@
+     albumsWrapperEl = document.querySelector(".albums__content")
+ 
+     constructor() {
+-        this.fillAlbums()
+         this.setEvents()
++        this.fillAlbums()
++
+     }
+ 
+     async fetchAlbums() {
+@@ -19,6 +20,7 @@
+     }
+ 
+     async fillAlbums() {
++
+         await this.fetchAlbums().then(albums => this.albumsWrapperEl.innerHTML = this.albumsMarkupCreate(albums, album.albumMarkupCreate)).catch(error => console.error(error))
+ 
+     }
+@@ -29,8 +31,9 @@
+ 
+     async clickHandler(event) {
+         if (event.target.nodeName === "A") {
++            this.albumsWrapperEl = null
+             await picturesController.fillPictures(event.target.dataset.id)
+-            // this.albumsWrapperEl.removeEventListener("click", this.clickHandler)
++
+         }
+     }
+ 
