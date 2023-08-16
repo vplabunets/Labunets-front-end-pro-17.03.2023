@@ -1,12 +1,11 @@
 import React from 'react'
 
-export function Card() {
+export function Card({title, text}) {
     return (
         <div className="card">
             <div className="card-body">
-                <h4 className="card-title">Card title</h4>
-                <p className="card-text">Some quick example text to build on the card</p>
-                <button type="button" className="btn btn-primary">Go somewhere</button>
+                {title && <h4 className="card-title">{title}</h4>}
+                {text && <p className="card-text">{text}</p>}
             </div>
         </div>
     )

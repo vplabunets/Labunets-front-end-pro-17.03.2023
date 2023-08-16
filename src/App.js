@@ -1,11 +1,16 @@
 import './App.css';
-import Definitions from "./Definitions/Definitions";
-import {definitions} from "./data/data";
+import {Card} from "./Card/Card";
 
 
 function App() {
     return <div className="container p-5">
-        <Definitions data={definitions}/>
+        <Card title={"Mykola Kulish"}/>
+        <Card text={"Ukrainian movie and theater director."}/>
+        <Card
+            title={"Vasyl Stus"}
+            text={"Ukrainian poet, translator, literary critic, journalist," +
+                " and an active member of the Ukrainian dissident movement"}
+        />
     </div>
 }
 
