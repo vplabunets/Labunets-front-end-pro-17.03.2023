@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 export function Definition({data}) {
     const {dt, dd} = data
@@ -11,3 +12,13 @@ export function Definition({data}) {
     )
 }
 
+Definition.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+                dt: PropTypes.string,
+                dd: PropTypes.string,
+                id: PropTypes.number,
+            }
+        )
+    )
+}

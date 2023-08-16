@@ -5,44 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed5ad04e-c6ec-452d-89aa-7e2a6eaf51cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hw-77/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/Card/Card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/Definition/Definition.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/Definitions/Definitions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/data/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw-77/src/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/Card/Card.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw-75/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw-77/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/hw-77/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw-77/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/hw-77/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw-77/src/Definition/Definition.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/hw-77/src/Definition/Definition.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -165,7 +133,8 @@
       <workItem from="1692033103608" duration="2515000" />
       <workItem from="1692040470675" duration="2214000" />
       <workItem from="1692168611159" duration="4883000" />
-      <workItem from="1692174598254" duration="507000" />
+      <workItem from="1692174598254" duration="1907000" />
+      <workItem from="1692176828498" duration="680000" />
     </task>
     <servers />
   </component>
@@ -209,6 +178,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
