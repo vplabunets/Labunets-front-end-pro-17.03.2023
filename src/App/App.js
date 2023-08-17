@@ -1,6 +1,6 @@
 import './App.css';
-import Definitions from "./Definitions/Definitions";
-import {definitions} from "./data/data";
+import Definitions from "../components/Definitions/Definitions";
+import {definitions} from "../data/data";
 
 
 function App() {
