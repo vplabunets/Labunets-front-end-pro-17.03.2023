@@ -1,5 +1,5 @@
 import "./App.css";
-import {alertData} from "../data/data"
+import {alertData} from "../../data/data"
 import {Alert} from "../Alert/Alert";
 
 export function App() {
