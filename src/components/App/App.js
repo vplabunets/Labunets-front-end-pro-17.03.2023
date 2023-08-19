@@ -1,17 +1,13 @@
 import "./App.css";
-import {Progress} from "../Progress/Progress";
-
+import {alertData} from "../data/data"
+import {Alert} from "../Alert/Alert";
 
 export function App() {
-    return (<>
+    console.log(alertData)
+    return (
         <div className="container p-5">
-            <Progress percentage={0}/>
-            <Progress percentage={25}/>
-            <Progress percentage={50}/>
-            <Progress percentage={75}/>
-            <Progress percentage={100}/>
+            {alertData.map(({type, text}) => <Alert key={type} type={type} text={text}/>)}
         </div>
-
-    </>);
+    );
 }
 
