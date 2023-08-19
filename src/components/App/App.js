@@ -1,13 +1,17 @@
 import "./App.css";
-import Definitions from "../Definitions/Definitions";
-import { definitions } from "../../data/data";
+import {Progress} from "../Progress/Progress";
 
-function App() {
-  return (
-    <div className="container p-5">
-      <Definitions data={definitions} />
-    </div>
-  );
+
+export function App() {
+    return (<>
+        <div className="container p-5">
+            <Progress percentage={0}/>
+            <Progress percentage={25}/>
+            <Progress percentage={50}/>
+            <Progress percentage={75}/>
+            <Progress percentage={100}/>
+        </div>
+
+    </>);
 }
 
-export default App;
