@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 
 export function Progress({percentage}) {
-    const xxx = classNames("progress-bar",
+    const alertTypeClass = classNames("progress-bar",
         {"bg-success": (percentage === 25)},
         {"bg-info": (percentage === 50)},
         {"bg-warning": (percentage === 75)},
@@ -11,7 +11,7 @@ export function Progress({percentage}) {
     )
     return (
         <div className="progress mb-2">
-            <div className={xxx} role="progressbar" aria-valuenow={percentage} aria-valuemin="0"
+            <div className={alertTypeClass} role="progressbar" aria-valuenow={percentage} aria-valuemin="0"
                  aria-valuemax="100"
                  aria-label="progressbar" style={{width: `${percentage}%`}}> {percentage}%
             </div>
