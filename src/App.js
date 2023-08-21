@@ -1,6 +1,6 @@
 import "./App.css";
-import {alertData} from "../../data/data"
-import {Alert} from "../Alert/Alert";
+import {alertData} from "./data/data"
+import {Alert} from "./components/Alert";
 
 export function App() {
     console.log(alertData)
