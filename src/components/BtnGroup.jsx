@@ -5,7 +5,7 @@ class BtnGroup extends Component {
     state = {
         buttonClass: "btn btn-primary"
     }
-    onClickHandler = async () => {
+    onClickHandler = () => {
         this.setState(
             {
                 buttonClass: classNames("btn btn-primary", {
