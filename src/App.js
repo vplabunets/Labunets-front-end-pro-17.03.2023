@@ -1,14 +1,14 @@
 import {Component} from "react";
-import {buttonsData} from "./data/data";
 import "./App.css";
-import BtnGroup from "./components/BtnGroup";
+import Carousel from "./components/Carousel";
+import {colors} from "./data/data";
 
 
 class App extends Component {
     render() {
         return (
             <div className="container p-5">
-                <BtnGroup buttonsData={buttonsData}/>
+                <Carousel colors={colors}/>
             </div>
         )
     };
