@@ -1,3 +1,3 @@
-ДЗ 82. Carousel.jsx
+ДЗ 82. Collapse.jsx
 
  
