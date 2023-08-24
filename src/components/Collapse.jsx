@@ -20,7 +20,7 @@ class Collapse extends Component {
             </p>
             {this.state.opened &&
                 <div className="card card-body">
-                    Collapse me
+                    {this.props.text}
                 </div>
             }
         </div>)
