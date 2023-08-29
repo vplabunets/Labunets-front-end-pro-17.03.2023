@@ -1,4 +1,4 @@
-ДЗ 85. Component.jsx
+ДЗ 86. TodoBox.jsx
 
 Реализуйте простой Todo, с возможностью добавлять и удалять заметки.
 src/TodoBox.jsx
