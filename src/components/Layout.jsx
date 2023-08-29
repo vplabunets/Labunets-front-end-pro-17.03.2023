@@ -1,52 +1,64 @@
 import React, {Component} from 'react'
-import Log from "./Log";
+import TodoBox from "./TodoBox";
 
 class Layout extends Component {
-    state = {step: this.props.step, startNumber: this.props.startNumber, currentResult: 0, log: []}
-
-
-    handleIncrement = async (event) => {
-        await this.setState(prevState => {
-            return {...prevState, currentResult: prevState.currentResult + 1}
-        })
-        this.addLogValue(this.state.currentResult)
+    state = {
+        currentTask: "",
+        tasks: [],
     }
 
-
-    handleDecrement = async (event) => {
-        await this.setState(prevState => {
-            return {...prevState, currentResult: prevState.currentResult - 1}
-        })
-        this.addLogValue(this.state.currentResult)
-
+    uniqueId = () => {
+        return `_${Math.random() * (99999 - 1) + 1}_${Date.now()}`
     }
-
-    addLogValue = (value) => {
+    handleChange = event => {
         this.setState(prevState => {
-            return {...prevState, log: [value, ...prevState.log]}
+            return {
+                ...prevState,
+                [event.target.name]: event.target.value
+            }
+        })
+    };
+    handleSubmit = (event) => {
+        event.preventDefault()
+        this.setState(prevState => {
+            return {
+                ...prevState, tasks: [{id: this.uniqueId(), task: this.state.currentTask}, ...prevState.tasks]
+
+            }
         })
     }
 
-    deleteLogValue = (value) => {
+    onRemove = (item) => {
         this.setState(prevState => {
-            return {...prevState, log: prevState.log.filter(element => element !== value)}
+            return {
+                ...prevState, tasks: prevState.tasks.filter(task => task.id !== item)
+
+            }
         })
     }
 
     render() {
-        return <>
-            <div className="btn-group font-monospace" role="group">
-                <button type="button" className="btn btn-outline-success" onClick={this.handleIncrement}>+</button>
-                <button type="button" className="btn btn-outline-danger" onClick={this.handleDecrement}>-</button>
-            </div>
-            <Log>
-                {this.state.log.length > 0 &&
-                    <div>{this.state.log.map((element, index) => <button key={index} type="button"
-                                                                         onClick={() => this.deleteLogValue(element)}
-                                                                         className="list-group-item list-group-item-action">{element}
-                    </button>)}
-                    </div>}
-            </Log></>
+        return <div className="mb-3">
+            <form className="d-flex">
+                <div className="me-3">
+                    <input type="text"
+                           className="form-control"
+                           value={this.state.currentTask}
+                           name="currentTask"
+                           placeholder="I am going..."
+                           onChange={this.handleChange}
+                           required=""
+                    />
+                </div>
+                {<button type="submit"
+                         className="btn btn-primary"
+                         onClick={this.handleSubmit}
+                         disabled={!Boolean(this.state.currentTask)}>add
+                </button>}
+            </form>
+            <TodoBox tasks={this.state.tasks} onRemove={this.onRemove}/>
+        </div>
+
 
     }
 }
