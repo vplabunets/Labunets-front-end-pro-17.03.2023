@@ -1,13 +1,13 @@
 import React, {Component} from "react";
 import "./App.css";
-import Portal from "./components/Portal";
+import PostCatalog from "./components/PostCatalog";
 
 
 class App extends Component {
     render() {
         return (
             <div className="container p-5">
-                <Portal/>
+                <PostCatalog/>
             </div>
         )
     };
