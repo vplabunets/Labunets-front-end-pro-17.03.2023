@@ -1,16 +1,15 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-export class Item extends Component {
-    render() {
-        const {task, onRemove, id} = this.props
+const Item = ({task, onRemove, id}) => {
 
-        return (
-            <div className={"list-group-item d-flex w-50  justify-content-between align-items-center mb-2 bg-info"}>
-                <p>{task}</p>
-                <button type="submit" className="btn btn-danger" onClick={() => onRemove(id)}>Delete task</button>
-            </div>
-        )
-    }
+
+    return (
+        <div className={"list-group-item d-flex w-50  justify-content-between align-items-center mb-2 bg-info"}>
+            <p>{task}</p>
+            <button type="submit" className="btn btn-danger" onClick={() => onRemove(id)}>Delete task</button>
+        </div>
+    )
+
 }
 
 export default Item
