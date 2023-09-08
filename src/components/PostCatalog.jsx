@@ -1,27 +1,29 @@
-import {Component} from "react";
+import {useEffect, useState} from "react";
+import {apiJsonPLaceholder} from "../api/apiJsonPLaceholder"
 
-export default class PostCatalog extends Component {
-    state = {
-        posts: [],
-    };
+const PostCatalog = () => {
+    const [posts, setPosts] = useState([]);
 
-    async componentDidMount() {
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-        const posts = await response.json();
-        this.setState({posts: [...posts]});
 
-    }
+    useEffect(() => {
+            const fetchData = async () => {
+                const response = await apiJsonPLaceholder();
+                setPosts([...response.data]);
+            };
 
-    render() {
+            fetchData();
+        }
+        , []);
 
-        return (<div className="posts">
-            <ul className="posts__list">
-                {this.state.posts.map(({id, title, body}) => <li className="posts_single-post" key={id}>
-                    <h3 className="posts__post-title">{title}</h3>
-                    <p className="posts__post-description">{body}</p>
-                </li>)}
-            </ul>
-        </div>)
-
-    }
+    return (<div className="posts">
+        <ul className="posts__list">
+            {posts.map(({id, title, body}) => <li className="posts_single-post" key={id}>
+                <h3 className="posts__post-title">{title}</h3>
+                <p className="posts__post-description">{body}</p>
+            </li>)}
+        </ul>
+    </div>)
 }
+
+
+export default PostCatalog
