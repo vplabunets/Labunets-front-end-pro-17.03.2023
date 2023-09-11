@@ -1,28 +1,22 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import MarkdownEditor from './components/MarkdownEditor';
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            markdownContent: '',
+const App = () => {
+    const [markdownContent, setMarkdownContent] = useState("")
 
-        };
-    }
 
-    handleContentChange = (content) => {
-        this.setState({markdownContent: content});
+    const handleContentChange = (content) => {
+        console.log(content)
+        return setMarkdownContent(content)
     };
 
-    render() {
-        const {markdownContent} = this.state;
-        return (
-            <div>
-                <MarkdownEditor onContentChange={this.handleContentChange}/>
-                <div dangerouslySetInnerHTML={{__html: markdownContent}}/>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <MarkdownEditor onContentChange={handleContentChange}/>
+            <div dangerouslySetInnerHTML={{__html: markdownContent}}/>
+        </div>
+    );
+
 }
 
 export default App;
